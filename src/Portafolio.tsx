@@ -6,7 +6,7 @@ import SkyCheck from './components/SkyCheck.tsx';
 
 const Portafolio = () => {
     return(
-        <div>
+        <div className={styles['fondo']}>
             <Myself />
             <Iot />
             <SkyCheck />
