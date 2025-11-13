@@ -1,10 +1,15 @@
-import { Outlet } from 'react-router-dom';
+import './App.css'
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Portafolio from './Portafolio';
 
-export default function App() {
-
+function App() {
   return (
-    <>
-      <Outlet />
-    </>
-  );
-};
+    <Router>
+      <Routes>
+        <Route path="/" element={<Portafolio/>}/>
+      </Routes>
+    </Router>
+  )
+}
+
+export default App
